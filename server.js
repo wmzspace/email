@@ -43,7 +43,6 @@ async function main(receiver) {
     },
   });
   console.log("ok");
-<img src='img/a.jpg'></img>
   // send mail with defined transport object
   let mailOptions = {
     from: `"AlienIT" <517941374@qq.com>`, //邮件来源
@@ -52,7 +51,7 @@ async function main(receiver) {
     html: `
     <p>Test Successfully!</p>
     <img src='img/a.jpg'></img>
-    <a href='#'>Click here to visit the website</a>
+    <a href='https://wmzspace.space/email/build'>Click here to visit the website</a>
     `, // html类型的邮件正文
   };
   let info = await transporter.sendMail(mailOptions);
@@ -112,5 +111,5 @@ app.post("/sends", (req, res) => {
 });
 
 app.listen(8086, function () {
-  console.log("应用实例，访问地址为 http://192.168.3.39:8086");
+  console.log("应用实例，访问地址为 http://43.143.213.226:8086");
 });
